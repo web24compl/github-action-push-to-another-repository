@@ -64,6 +64,8 @@ git config --global user.name "$USER_NAME"
 
 echo "[+] Listing Current Directory Location"
 ls -al
+echo "[+] set safe.directory"
+git config --global --add safe.directory /github/workspace
 echo "[+] Show current origin"
 git remote -v
 echo "[+] Delete origin"
