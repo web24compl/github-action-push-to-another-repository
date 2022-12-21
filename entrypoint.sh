@@ -66,12 +66,13 @@ echo "[+] Listing Current Directory Location"
 ls -al
 echo "[+] set safe.directory"
 git config --global --add safe.directory /github/workspace
+git fetch --unshallow old
 echo "[+] Show current origin"
 git remote -v
-echo "[+] Delete origin"
-git remote rm origin
-echo "[+] Show current origin"
-git remote -v
+# echo "[+] Delete origin"
+# git remote rm origin
+# echo "[+] Show current origin"
+# git remote -v
 echo "[+] Add origin"
 git remote add destination_origin $GIT_CMD_REPOSITORY
 echo "[+] Show current origin"
