@@ -78,4 +78,4 @@ echo "[+] Show current origin"
 git remote -v
 
 echo "[+] Pushing git commits"
-git push destination_origin $TARGET_BRANCH
+git push destination_origin ${GITHUB_REF##*/}:$TARGET_BRANCH
